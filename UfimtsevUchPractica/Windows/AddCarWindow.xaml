@@ -1,0 +1,47 @@
+﻿<Window x:Class="UfimtsevUchPractica.Windows.AddCarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UfimtsevUchPractica.Windows" 
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="AddCarWindow" Height="450" Width="800" Icon="/Resources/Icon.png" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <sys:String x:Key="defaultImage">
+            D:\VSProjects\UfimtsevUchPractica\UfimtsevUchPractica\Resources\picture.png
+        </sys:String>
+    </Window.Resources>
+    <ScrollViewer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Фотография автомобиля:"/>
+                <Image x:Name="img" Width="100" Height="100" Source="{Binding ingPath,FallbackValue={StaticResource defaultImage}}"/>
+                <Button x:Name="btnEnterImg" Content="Выбрать фотографию" Click="btnEnterImg_Click" Width="200"/>
+                <TextBlock Text="Марка автомобиля:"/>
+                <ComboBox x:Name="cmbMark" ItemsSource="{Binding Mark}" SelectionChanged="cmbMark_SelectionChanged"/>
+                <TextBlock Text="Модель автомобиля:"/>
+                <ComboBox x:Name="cmbModel" />
+                <TextBlock Text="Год выпуска:"/>
+                <TextBox x:Name="txtYear"/>
+                <TextBlock Text="VIN:"/>
+                <TextBox x:Name="txtVIN"/>
+                <TextBlock Text="PTS:"/>
+                <TextBox x:Name="txtPTS"/>
+                <TextBlock Text="Цена:"/>
+                <TextBox x:Name="txtPrice"/>
+                <Button x:Name="btnAdd" Content="Добавить автомобиль" Click="btnAdd_Click" Width="200"/>
+
+            </StackPanel>
+
+        </Grid>
+    </ScrollViewer>
+    
+</Window>

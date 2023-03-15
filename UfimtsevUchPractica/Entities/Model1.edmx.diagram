@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dec45db7ed004d5fa18bbfc2a713324f" Name="Diagram1">
+        <EntityTypeShape EntityType="UchPracticaModel.Car" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.CarStatus" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.Mark" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.Model" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.OrderCar" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.OrderStatus" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.PickUpPoint" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.Role" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UchPracticaModel.User" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="UchPracticaModel.FK_Car_CarStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="UchPracticaModel.FK_Car_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="UchPracticaModel.FK_OrderCar_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="UchPracticaModel.FK_Model_Mark" ManuallyRouted="false" />
+        <AssociationConnector Association="UchPracticaModel.FK_Order_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="UchPracticaModel.FK_Order_PickUpPoint" ManuallyRouted="false" />
+        <AssociationConnector Association="UchPracticaModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="UchPracticaModel.FK_OrderCar_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="UchPracticaModel.FK_User_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
